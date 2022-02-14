@@ -44,3 +44,31 @@ else{
         console.log(`Hello  ${userName} + (Gender not defiend)`)
     }
 }
+
+var Ask01 = prompt("Are y single ?:");
+
+if(Ask01 =="yes" || Ask01 == "no"){
+    return Ask01 ;
+}
+else
+alert("invalid")
+
+
+var Ask02 = prompt("Are y marred ?:");
+
+if(Ask02 =="yes" || Ask02 == "no"){
+    return Ask02 ;
+}
+else
+alert("invalid")
+
+var Ask03 = prompt("Are y marred ?:");
+
+if(Ask03 =="yes" || Ask03 == "no"){
+    return Ask03 ;
+}
+else
+alert("invalid")
+
+
+function saving ()
