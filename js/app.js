@@ -45,30 +45,49 @@ else{
     }
 }
 
-var Ask01 = prompt("Are y single ?:");
 
-if(Ask01 =="yes" || Ask01 == "no"){
-    return Ask01 ;
+// this part is realted to task 06 that ask the user more 3 qustion 
+// in branch todo-js2
+var answers = [];
+var askWife = prompt("Do you have Wife  ?")
+var askKids = prompt("Do you have kids")
+var staus = prompt("are you single ")
+alert("take alook to console ;)");
+
+addToAnswers(askWife, askKids, staus);
+displayAnswers();
+
+
+function displayAnswers(){
+
+    console.log("Your name is: " + userName)
+    console.log("Your age is: " + userAge)
+    console.log("Your gender is: " + userGender)
+
+    for(let i = 0; i < answers.length; i++){
+        console.log(answers[i]);
+    }
+
 }
-else
-alert("invalid")
 
+function addToAnswers(askWife, askKids, staus){
 
-var Ask02 = prompt("Are y marred ?:");
+    if(askWife != ""){
+        answers.push(askWife);
+    }else{
+        answers.push("invalid answer")
+    }
 
-if(Ask02 =="yes" || Ask02 == "no"){
-    return Ask02 ;
+    if(askKids != ""){
+        answers.push(askKids);
+    }else{
+        answers.push("invalid answer")
+    }
+
+    if(staus != ""){
+        answers.push(staus);
+    }else{
+        answers.push("invalid answer")
+    }
 }
-else
-alert("invalid")
 
-var Ask03 = prompt("Are y marred ?:");
-
-if(Ask03 =="yes" || Ask03 == "no"){
-    return Ask03 ;
-}
-else
-alert("invalid")
-
-
-function saving ()
