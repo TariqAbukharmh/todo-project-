@@ -18,11 +18,11 @@ a {
     color: white;
     border: 5px solid black;
     border-radius: 10px;
+    
 
 }
-hr{
-    margin: 0px;
-}
+
+
 .grid-container{
 
     display: grid;
